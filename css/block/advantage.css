@@ -1,0 +1,53 @@
+.advantage {
+    content: "";
+    height: 649px;
+    background-image: url(../../img/advantage/advg_bg.png);
+    background-size: cover;
+    min-width: 1140px;
+}
+
+.caption--advg {
+    width: 390px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 117px;
+    text-align: center;
+    color: #2f3234;
+}
+
+.advantage__list {
+    text-align: center;
+    margin-top: 37px;
+}
+
+.advantage__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 27px;
+}
+
+.advantage__item:last-child {
+    margin-right: 0;
+}
+
+.advantage__caption, .advantage__desc {
+    display: block;
+}
+
+.advantage__icon-block {
+    height: 89px;
+    display: inline-block;
+}
+
+.advantage__caption {
+    font-family: 'lifehackmedium';
+    font-size: 24px;
+    color: #2f3234;
+    line-height: 28.14px;
+    margin-top: 26px;
+}
+
+.advantage__desc {
+    font-size: 14px;
+    line-height: 24.07px;
+}
