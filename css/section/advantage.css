@@ -1,6 +1,7 @@
 .advantage {
     content: "";
-    height: 649px;
+    height: 100vh;
+    min-height: 650px;
     background-image: url(../../img/advantage/advg_bg.png);
     background-size: cover;
     min-width: 1140px;

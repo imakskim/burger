@@ -4,8 +4,9 @@
 @import url('./layout/fonts.css');
 
 /* block */
-@import url('./block/hello.css');
-@import url('./block/advantage.css');
+@import url('./section/hello.css');
+@import url('./section/advantage.css');
+@import url('./section/feed.css');
 
 
 

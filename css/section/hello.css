@@ -1,6 +1,7 @@
-.header {
+
+.header__block {
     position: absolute;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .logo {
@@ -78,6 +79,7 @@
 .banner__pic {
     position: relative;
     display: inline-block;
+    height: 420px;
     margin-left: 130px;
 }
 
@@ -85,6 +87,7 @@
     display: inline-block;
     vertical-align: top;
     margin-top: 135px;
+    margin-left: 10px;
 }
 
 .caption {
@@ -110,7 +113,7 @@
 }
 
 .pagination {
-    position: absolute;
+    position: fixed;
     z-index: 10;
     right: 54px;
     top: 90px;
@@ -118,14 +121,24 @@
 
 .pagination__link {
     display: block;
-    width: 6px;
-    height: 6px;
-    background-color: white;
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
+    background: url(../../img/hello/point.png) center center no-repeat;
+}
+
+.pagination__link--active {
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.pagination__link:hover {
+    border: 1px solid white;
     border-radius: 50%;
 }
 
 .pagination__item {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .pagination__item:last-child {
@@ -134,18 +147,10 @@
 
 .banner {
     position: relative;
-    height: 650px;
+    height: 100vh;
+    min-height: 650px;
     background-image: url(../../img/hello/video-bg.png);
     background-size: cover;
     min-width: 1140px;
 }
 
-.banner:before {
-    content: "";
-    height: 100%;
-    width: 100%;
-    display: block;
-    background-image: url(../../img/hello/texture.png);
-    position: absolute;
-    min-width: 1140px;
-}
