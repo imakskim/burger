@@ -31,13 +31,13 @@ body {
 
 @font-face {
   font-family: 'gagalinregular';
-  src: url("../../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../../fonts/gagalin-regular-webfont.woff") format("woff");
+  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'lifehackmedium';
-  src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/lifehack_medium-webfont.woff") format("woff");
+  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -154,7 +154,7 @@ body {
   height: 14px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: url(../../img/hello/point.png) center center no-repeat; }
+  background: url(../img/hello/point.png) center center no-repeat; }
 
 .pagination__link--active {
   border: 1px solid white;
@@ -174,7 +174,7 @@ body {
   position: relative;
   height: 100vh;
   min-height: 650px;
-  background-image: url(../../img/hello/video-bg.png);
+  background-image: url(../img/hello/video-bg.png);
   background-size: cover;
   min-width: 1140px; }
 
@@ -182,7 +182,7 @@ body {
   content: "";
   height: 100vh;
   min-height: 650px;
-  background-image: url(../../img/advantage/advg_bg.png);
+  background-image: url(../img/advantage/advg_bg.png);
   background-size: cover;
   min-width: 1140px; }
 
@@ -249,35 +249,35 @@ body {
   filter: grayscale(1); }
 
 .feed__list--1 {
-  background: url(../../img/feed/feed_photo1.png) center center no-repeat;
+  background: url(../img/feed/feed_photo1.png) center center no-repeat;
   background-size: cover; }
 
 .feed__list--2 {
-  background: url(../../img/feed/feed_photo2.png) center center no-repeat;
+  background: url(../img/feed/feed_photo2.png) center center no-repeat;
   background-size: cover; }
 
 .feed__list--3 {
-  background: url(../../img/feed/feed_photo3.png) center center no-repeat;
+  background: url(../img/feed/feed_photo3.png) center center no-repeat;
   background-size: cover; }
 
 .feed__list--4 {
-  background: url(../../img/feed/feed_photo4.png) center center no-repeat;
+  background: url(../img/feed/feed_photo4.png) center center no-repeat;
   background-size: cover; }
 
 .feed__list--5 {
-  background: url(../../img/feed/feed_photo5.png) center center no-repeat;
+  background: url(../img/feed/feed_photo5.png) center center no-repeat;
   background-size: cover; }
 
 .feed__list--6 {
-  background: url(../../img/feed/feed_photo6.png) center center no-repeat;
+  background: url(../img/feed/feed_photo6.png) center center no-repeat;
   background-size: cover; }
 
 .feed__list--7 {
-  background: url(../../img/feed/feed_photo7.png) center center no-repeat;
+  background: url(../img/feed/feed_photo7.png) center center no-repeat;
   background-size: cover; }
 
 .feed__list--8 {
-  background: url(../../img/feed/feed_photo8.png) center center no-repeat;
+  background: url(../img/feed/feed_photo8.png) center center no-repeat;
   background-size: cover; }
 
 .feed__item {
