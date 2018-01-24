@@ -1,99 +1,93 @@
 .feed__block {
-    height: 100vh;
-    min-height: 650px;
-    display: flex;
-    flex-wrap: wrap;
-}
+  height: 100vh;
+  min-height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
 .feed__list {
-    width: 25%;
-    min-height: 325px;
-    margin: 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-}
+  width: 25%;
+  min-height: 325px;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
 
 .feed__list--1 {
-    background: url(../../img/feed/feed_photo1.png) center center no-repeat;
-    background-size: cover;
-}
+  background: url(../../img/feed/feed_photo1.png) center center no-repeat;
+  background-size: cover; }
 
 .feed__list--2 {
-    background: url(../../img/feed/feed_photo2.png) center center no-repeat;
-    background-size: cover;
-}
+  background: url(../../img/feed/feed_photo2.png) center center no-repeat;
+  background-size: cover; }
 
 .feed__list--3 {
-    background: url(../../img/feed/feed_photo3.png) center center no-repeat;
-    background-size: cover;
-}
+  background: url(../../img/feed/feed_photo3.png) center center no-repeat;
+  background-size: cover; }
 
 .feed__list--4 {
-    background: url(../../img/feed/feed_photo4.png) center center no-repeat;
-    background-size: cover;
-}
+  background: url(../../img/feed/feed_photo4.png) center center no-repeat;
+  background-size: cover; }
 
 .feed__list--5 {
-    background: url(../../img/feed/feed_photo5.png) center center no-repeat;
-    background-size: cover;
-}
+  background: url(../../img/feed/feed_photo5.png) center center no-repeat;
+  background-size: cover; }
 
 .feed__list--6 {
-    background: url(../../img/feed/feed_photo6.png) center center no-repeat;
-    background-size: cover;
-}
+  background: url(../../img/feed/feed_photo6.png) center center no-repeat;
+  background-size: cover; }
 
 .feed__list--7 {
-    background: url(../../img/feed/feed_photo7.png) center center no-repeat;
-    background-size: cover;
-}
+  background: url(../../img/feed/feed_photo7.png) center center no-repeat;
+  background-size: cover; }
 
 .feed__list--8 {
-    background: url(../../img/feed/feed_photo8.png) center center no-repeat;
-    background-size: cover;
-}
+  background: url(../../img/feed/feed_photo8.png) center center no-repeat;
+  background-size: cover; }
 
 .feed__item {
-    max-width: 230px;
-    max-height: 325px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0;
-}
+  max-width: 230px;
+  max-height: 325px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0; }
 
 .feed__item:hover {
-    opacity: 1;
-}
+  opacity: 1; }
 
 .feed__caption {
-    font-family: 'gagalinregular', Arial, serif;
-    font-size: 14px;
-    color: white;
-}
+  font-family: 'gagalinregular', Arial, serif;
+  font-size: 14px;
+  color: white; }
 
 .feed__desc {
-    font-family: 'Ubuntu-Light', Arial, serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  line-height: 24px; }
 
 .feed__btn {
-    width: 110px;
-    height: 35px;
-    color: white;
-    border: #2f3234;
-    border-radius: 5px;
-    background: #2f3234;
-}
+  width: 110px;
+  height: 35px;
+  color: white;
+  border: #2f3234;
+  border-radius: 5px;
+  background: #2f3234; }
