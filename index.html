@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 
     <link rel="stylesheet" href="css/layout/normalize.css">
-    
+
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__block">
+        <section class="banner">
+            <div class="container hero__container">
+                <header class="header">
                     <div class="logo">
                         <img src="img/hello/logo.png" alt="" class="logo__pic">
                     </div>
@@ -46,47 +46,42 @@
                         </ul>
                     </nav>
                     <button class="recieve">Заказать</button>
-                </div>
-            </div>
-        </header>
-        <div class="container">
-            <aside class="pagination">
-                <nav class="pagination__menu">
-                    <ul class="pagination__list">
-                        <li class="pagination__item">
-                            <a href="" class="pagination__link pagination__link--active"></a>
-                        </li>
-                        <li class="pagination__item">
-                            <a href="" class="pagination__link">
-                            </a>
-                        </li>
-                        <li class="pagination__item">
-                            <a href="" class="pagination__link"></a>
-                        </li>
-                        <li class="pagination__item">
-                            <a href="" class="pagination__link"></a>
-                        </li>
-                        <li class="pagination__item">
-                            <a href="" class="pagination__link"></a>
-                        </li>
-                        <li class="pagination__item">
-                            <a href="" class="pagination__link"></a>
-                        </li>
-                        <li class="pagination__item">
-                            <a href="" class="pagination__link"></a>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
-        </div>
-        <section class="banner">
-            <div class="container">
-                <div class="banner__item">
-                    <img src="img/hello/steam-burger.png" alt="" class="banner__pic">
-                    <div class="banner__text">
-                        <h2 class="caption">Мы делаем</h2>
-                        <h3 class="banner__desc">Натуральные
-                            <br>бургеры</h3>
+                </header>
+                <aside class="pagination">
+                    <nav class="pagination__menu">
+                        <ul class="pagination__list">
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link pagination__link--active"></a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link">
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link"></a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link"></a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link"></a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link"></a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <div class="hero__content">
+                    <div class="hero__pic">
+                        <img class="hero__pic-img" src="./img/hello/steam-burger.png" alt="">
+                    </div>
+                    <div class="hero__text">
+                        <div class="caption">Мы Делаем</div>
+                        <div class="hero__desc">Натуральные бургеры</div>
                     </div>
                 </div>
             </div>
@@ -125,6 +120,59 @@
                         <p class="advantage__desc">
                             Драма представляет собой деструктивный
                             <br> цикл. Анапест представляет собой анапест.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="best">
+            <div class="container">
+                <h3 class="caption caption--center caption--black">Мы лучшие</h3>
+                <ul class="best__list">
+                    <li class="best__item">
+                        <div class="best__pic">
+                            <svg class="best__icon best__icon-meat">
+                                <use xlink:href="./img/sprite/sprite.svg#meat"></use>
+                            </svg>
+                        </div>
+                        <div class="best__info">
+                            <div class="best__tittle">100% свежее мясо</div>
+                            <div class="best__desc">
+                                <p class="">
+                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="best__item">
+                        <div class="best__pic">
+                            <svg class="best__icon best__icon-hand">
+                                <use xlink:href="./img/sprite/sprite.svg#hand"></use>
+                            </svg>
+                        </div>
+                        <div class="best__info">
+                            <div class="best__tittle">Ручная сборка</div>
+                            <div class="best__desc">
+                                <p class="">
+                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский
+                                    пафос.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="best__item">
+                        <div class="best__pic">
+                            <svg class="best__icon best__icon-natural">
+                                <use xlink:href="./img/sprite/sprite.svg#natural"></use>
+                            </svg>
+                        </div>
+                        <div class="best__info">
+                            <div class="best__tittle">Натуральные ингредиенты</div>
+                            <div class="best__desc">
+                                <p class="">
+                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                                </p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -228,7 +276,6 @@
                         <button class="feed__btn">Подробнее</button>
                     </div>
                 </div>
-                <!-- </div> -->
             </div>
         </section>
     </div>
