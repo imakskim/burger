@@ -2,12 +2,14 @@
 .header {
     position: absolute;
     z-index: 1;
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
     display: inline-block;
     margin-top: 12px;
-    margin-left: 77px;
+    padding-left: 77px;
 }    
 
 .menu {
@@ -84,52 +86,24 @@
 
 .banner {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     min-height: 650px;
     background-image: url(../img/hello/video-bg.png);
     background-size: cover;
-    min-width: 1100px;
+    width: 100%;
 }
 
-// .banner__item {
-//     padding-top: 76px;
-//     position: relative;
-// }
-
-// .banner__pic {
-//     position: relative;
-//     display: inline-block;
-//     height: 420px;
-//     margin-left: 130px;
-// }
-
-// .banner__text {
-//     display: inline-block;
-//     vertical-align: top;
-//     margin-top: 135px;
-//     margin-left: 10px;
-// }
-
-// .banner__desc {
-//     display: block;
-//     font-family: 'lifehackmedium';
-//     font-size: 65px;
-//     font-weight: 400;
-//     text-transform: lowercase;
-//     line-height: 60px;
-//     color: #ffffff;
-//     margin: 0;
-//     margin-top: 15px;
-// }
 .hero__container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 650px;
+    height: 100vh;
 }
 
 .hero__content {
     display: flex;
-    flex: .89;
+    flex-wrap: wrap;
+    flex: .9;
     align-items: center;
     justify-content: center;
 }

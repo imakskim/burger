@@ -1,18 +1,16 @@
 .best {
     height: 100vh;
     min-height: 650px;
+    width: 100%;
     background-image: url(../img/advantage/advg_bg.png);
     background-size: cover;
-    min-width: 1100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
+
 
 .best__list {
     display: flex;
-    flex: 1;
     justify-content: center;
+    margin-top: 6rem;
 }
 
 .best__icon {
@@ -37,12 +35,14 @@
     font-size: 24px;
     color: #2f3234;
     line-height: 28.14px;
+    margin-top: 20px;
 }
 
 .best__desc {
     text-align: center;
     font-size: 14px;
     line-height: 24.07px;
+    margin-top: 15px;
 }
 
 .best__item {
@@ -50,12 +50,15 @@
 }
 
 .caption {
-    display: flex;
     &--center {
-        justify-content: center;
+        text-align: center;
     }
 
     &--black {
         color: #303334;
+    }
+
+    &--best {
+        padding-top: 9rem;
     }
 }

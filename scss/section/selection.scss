@@ -1,0 +1,80 @@
+.selection {
+    height: 100vh;
+    background-image: url(../img/selection/selection_bg.png);
+    background-size: cover;
+    position: relative;
+}
+
+.selection__content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+}
+
+.selection__acco {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.selection__acco-item {
+    height: 100vh;
+    display: flex;
+}
+
+.selection__acco-trigger {
+    border: 0;
+    padding: 0;
+    width: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    &--meat {
+        background: url(../img/selection/meat.png) no-repeat;
+        background-size: cover;
+        // filter: brightness(50%)
+    }
+    &--vegan {
+        background: url(../img/selection/vegan.png) no-repeat;
+        background-size: cover;
+        // filter: brightness(50%)
+    }
+    &--diet {
+        background: url(../img/selection/diet.png) no-repeat;
+        background-size: cover;
+        // filter: brightness(50%)
+    }
+}
+
+.selection__acco-item-tittle {
+    margin: 0;
+    padding: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'gagalinregular';
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.selection__acco-content {
+    width: 0;
+    overflow: hidden;
+}
+
+.selection__acco-item--active {
+    .selection__acco-content {
+        background: rgba(#141414, .8);
+        color: #fff;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+    }
+}
+
+.selection__acco-text {
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
