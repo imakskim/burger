@@ -1,9 +1,11 @@
 .team {
-    height: 100vh;
-    min-height: 650px;
     position: relative;
     background: url(../img/team/team_bg.png) center center no-repeat;
     background-size: cover;
+}
+
+.continer__team {
+    max-width: 100vw;
 }
 
 .team__container {
@@ -46,7 +48,7 @@
 
 .caption--team {
     margin: 0;
-    margin-top: 25%;
+    margin-top: 15%;
     margin-bottom: 10%;
     padding: 0;
 }
@@ -60,7 +62,7 @@
     margin-left: 5%;
 }
 
-.team__acco-article-tittle {
+.team__acco-article-title {
     font-size: 14px;
     font-weight: 700;
     color: #fff;

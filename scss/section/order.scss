@@ -1,0 +1,103 @@
+.order {
+    background: url(../img/order/order_bg.png) center center no-repeat;
+    background-size: cover;
+}
+
+.container__order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    color: #fff;
+    display: flex;
+}
+
+.form__container {
+    width: 50%;
+}
+
+.caption--order {
+    text-align: center;
+    
+}
+
+.order__caption-block {
+    margin-bottom: 20px;
+}
+
+.form__row {
+    margin-bottom: 20px; 
+    display: flex;
+    width: 98%;
+
+    &--right-side {
+        margin-left: 2%;
+    }
+}
+
+.form__block {
+    display: block;
+    flex: 1;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--radio {
+        display: flex;
+        align-items: center;
+        flex: .4;
+        justify-content: flex-start;
+    }
+
+    &--checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &--button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.form__input {
+    padding: 5px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form__big-text {
+    width: 98%;
+    height: 6.8em;
+    resize: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form__radio {
+    margin-right: 10px;
+}
+
+.form__checkbox {
+    margin-right: 10px;
+}
+
+.clear {
+    font-family: 'Ubuntu';
+    font-size: .9em;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 15px;
+}

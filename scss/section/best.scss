@@ -1,11 +1,8 @@
 .best {
-    height: 100vh;
-    min-height: 650px;
     width: 100%;
     background-image: url(../img/advantage/advg_bg.png);
     background-size: cover;
 }
-
 
 .best__list {
     display: flex;
@@ -29,7 +26,7 @@
     }
 }
 
-.best__tittle {
+.best__title {
     text-align: center;
     font-family: 'lifehackmedium';
     font-size: 24px;

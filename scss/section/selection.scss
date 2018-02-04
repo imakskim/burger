@@ -1,8 +1,11 @@
 .selection {
-    height: 100vh;
     background-image: url(../img/selection/selection_bg.png);
     background-size: cover;
     position: relative;
+}
+
+.container__selection {
+    max-width: 100vw;
 }
 
 .selection__content {
@@ -14,12 +17,12 @@
 }
 
 .selection__acco {
+    height: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
 .selection__acco-item {
-    height: 100vh;
     display: flex;
 }
 
@@ -48,7 +51,7 @@
     }
 }
 
-.selection__acco-item-tittle {
+.selection__acco-item-title {
     margin: 0;
     padding: 0;
     writing-mode: vertical-rl;
