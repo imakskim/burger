@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="css/main.css">
 
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -397,13 +399,13 @@
                         </div>
                     </div>
                     <div class="form__container">
-                        <div class="form__row form__row--right-side">
+                        <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">Комментарий</div>
                                 <textarea name="" id="" class="form__big-text"></textarea>
                             </label>
                         </div>
-                        <div class="form__row form__row--right-side">
+                        <div class="form__row">
                             <label class="form__block form__block--radio">
                                 <input type="radio" class="form__radio" name="form-radio">
                                 <div class="form__title">Потребуется сдача</div>
@@ -413,13 +415,13 @@
                                 <div class="form__title">Оплата по карте</div>
                             </label>
                         </div>
-                        <div class="form__row form__row--right-side">
+                        <div class="form__row">
                             <label class="form__block form__block--checkbox">
                                 <input type="checkbox" name="form-checkbox" class="form__checkbox">
                                 <div class="form__title">Не перезванивать</div>
                             </label>
                         </div>
-                        <div class="form__row form__row--right-side">
+                        <div class="form__row">
                             <label class="form__block form__block--button">
                                 <button class="recieve">Заказать</button>
                                 <button class="clear" type="reset">Очистить</button>
@@ -429,7 +431,11 @@
                 </form>
             </div>
         </section>
+        <div class="container container--maps">
+            <div id="map" class="map"></div>
+        </div>
     </div>
+    <script src="ymaps.js" type="text/javascript"></script>
 </body>
 
 </html>
