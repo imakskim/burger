@@ -82,7 +82,8 @@ h1, h2, h3, h4 {
 
 .menu {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-right: 20px; }
 
 .menu__list {
   display: -webkit-box;
@@ -688,4 +689,32 @@ h1, h2, h3, h4 {
   height: 100px;
   width: 100px; }
 
-/*# sourceMappingURL=main.css.map */
+@media (max-width: 1200px) {
+  .container {
+    width: 970px; }
+  .logo {
+    padding-left: 20px; } }
+
+@media (max-width: 992px) {
+  .container {
+    width: 750px; }
+  .menu__item:before {
+    margin-right: 5px;
+    margin-left: 5px; }
+  .caption {
+    font-size: 3.45rem; } }
+
+@media (max-width: 768px) {
+  .container {
+    width: 480px; }
+  .logo {
+    padding-left: 5px; }
+  .menu {
+    margin-right: 5px; }
+  .menu__item:before {
+    margin-right: 3px;
+    margin-left: 3px; } }
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%; } }
