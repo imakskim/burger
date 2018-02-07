@@ -20,14 +20,19 @@ p {
 
 html, body {
    height: 100%;
-   font-size: 16px;
 }
 
 .container {
-    height: 100vh;
     min-height: 650px;
     margin: 0 auto;
     max-width: 1100px;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
 }
 
 .section {
@@ -35,6 +40,7 @@ html, body {
 }
 
 body {
+    font-size: rem(16px);
     font-family: 'Ubuntu', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

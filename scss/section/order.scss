@@ -13,22 +13,35 @@
     color: #fff;
     display: flex;
     flex-wrap: wrap;
+    
+    @include tablets {
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .form__container {
     width: 50%;
+    
+    @include tablets {
+    width: 80%;
+    }
 }
 
 .caption--order {
     text-align: center;
+    margin-bottom: 10%;
+    margin-top: 15vh;
+    
+    @include tablets {
+    margin-top: 5vh;
+
+    }
 }
 
-.order__caption-block {
-    margin-bottom: 10%;
-}
 
 .form__row {
-    margin-bottom: 20px; 
+    margin-bottom: rem(20px); 
     display: flex;
     width: 96%;
     margin-left: 2%;
@@ -38,7 +51,7 @@
 .form__block {
     display: block;
     flex: 1;
-    margin-right: 20px;
+    margin-right: rem(20px);
 
     &:last-child {
         margin-right: 0;
@@ -65,10 +78,10 @@
 }
 
 .form__input {
-    padding: 5px;
+    padding: rem(5px);
     background: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: rem(5px);
     width: 100%;
     box-sizing: border-box;
 }
@@ -77,16 +90,16 @@
     width: 100%;
     height: 6.8em;
     resize: none;
-    border-radius: 5px;
+    border-radius: rem(5px);
     box-sizing: border-box;
 }
 
 .form__radio {
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 
 .form__checkbox {
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 
 .clear {
@@ -97,5 +110,5 @@
     background: none;
     border: none;
     color: white;
-    margin-left: 15px;
+    margin-left: rem(15px);
 }

@@ -7,12 +7,17 @@
 .best__list {
     display: flex;
     justify-content: center;
-    margin-top: 6rem;
+    padding-top: rem(96px);
+    
+    @include tablets {
+        padding-top: rem(50px);
+    }
 }
+
 
 .best__icon {
     width: 100%;
-    height: 90px;
+    height: rem(90px);
     &-meat {
         fill: #e05132;
     }
@@ -29,21 +34,25 @@
 .best__title {
     text-align: center;
     font-family: 'lifehackmedium';
-    font-size: 24px;
+    font-size: rem(24px);
     color: #2f3234;
-    line-height: 28.14px;
-    margin-top: 20px;
+    line-height: rem(28.14px);
+    margin-top: rem(20px);
 }
 
 .best__desc {
     text-align: center;
-    font-size: 14px;
-    line-height: 24.07px;
-    margin-top: 15px;
+    font-size: rem(14px);
+    line-height: rem(24.07px);
+    margin-top: rem(15px);
 }
 
 .best__item {
     width: 28%;
+
+    @include tablets {
+        width: 29%;
+    }
 }
 
 .caption {
@@ -56,6 +65,10 @@
     }
 
     &--best {
-        padding-top: 9rem;
+        padding-top: rem(144px);
+    }
+
+    @include tablets {
+        padding-top: 5rem;
     }
 }

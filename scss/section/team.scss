@@ -17,6 +17,10 @@
     background: rgba(#2f3234, .8);
     display: flex;
     justify-content: center;
+    
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .team__acco-item--active {
@@ -29,15 +33,25 @@
     }
     .team__acco-content {
         display: flex;
+
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
 }
 
 .team__acco-item {
     margin-bottom: 10%;
-
+    
     &:last-child {
         margin-bottom: 0;
+    }
+    
+    @include tablets {
+        margin-bottom: 5%;
+        text-align: center;
     }
 
 }
@@ -54,8 +68,8 @@
 }
 
 .team__acco-avatar {
-    height: 100px;
-    width: 100px;
+    height: rem(100px);
+    width: rem(100px);
 }
 
 .team__acco-article {
@@ -63,13 +77,13 @@
 }
 
 .team__acco-article-title {
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 700;
     color: #fff;
 }
 
 .team__acco-article-text {
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
     margin-top: 10%;
 }
@@ -87,17 +101,21 @@
     background: none;
     color: #fff;
     font-family: 'gagalinregular';
-    font-size: 14px;
+    font-size: rem(14px);
     display: flex;
-
+    
     &:before {
         content: "";
         display: block; 
         height: 0;
         width: 0;
-        border: 9px solid transparent;
+        border: rem(9px) solid transparent;
         border-top-color: #f8b349;
         border-bottom-width: 0px;
+    }
+    
+    @include tablets {
+        margin: 0 auto;
     }
 }
 

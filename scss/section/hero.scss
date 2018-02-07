@@ -1,103 +1,16 @@
-
-.header {
-    position: absolute;
-    z-index: 1;
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.container__header {
-    min-height: 0;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    margin-top: 12px;
-    padding-left: 77px;
-}  
-
-.menu__container {
-    text-align: right;
-}
-
-.menu {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-}
-
-
-.menu__list {
-    display: flex;
-    align-items: center;
-}
-
-.menu__link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Ubuntu;
-    font-size: 13px;
-    color: white;
-}
-
-.menu__item:before {
-    content:"";
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    vertical-align: middle;
-    background-color: white;
-    margin-right: 13px;
-    margin-left: 13px;
-}
-
-.menu__item:first-child:before {
-    content: none;
-}
-
-.menu__item:last-child:before {
-    content: none;
-}
-
-.menu__item--recieve {
-    margin-left: 11px;
-}
-
-.logo__pic {
-    width: 92px;
-    height: 69px;
-    background-size: contain;
-    vertical-align: middle;
-}   
-
-.recieve {
-    vertical-align: middle;
-    width: 97px;
-    height: 35px;
-    background-color: #e45028;
-    border: 0px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-family: Ubuntu;
-    font-size: 13px;
-    font-weight: 500;
-    text-align: center;
-    color: white;
-    box-sizing: border-box;
-}
-
 .caption {
     display: block;
     font-family: gagalinregular;
-    font-size: 72px;
-    line-height: 85px;
+    font-size: rem(72px);
+    line-height: rem(85px);
     color: #f9b43b;
     font-weight: 400;
-    margin: 0px;
+    margin: rem(0px);
+
+    @include tablets {
+        font-size: rem(60px);
+        text-align: center;
+    }
 }
 
 .hero {
@@ -109,33 +22,51 @@
 
 .container__hero {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .hero__content {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex: .9;
     align-items: center;
     justify-content: center;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
   
-.hero__text {
+.hero__desc {
     color: #fff;
     font-family: 'lifehackmedium';
-    font-size: 65px;
+    font-size: rem(65px);
     font-weight: 400;
     text-transform: lowercase;
-    line-height: 60px;
+    line-height: rem(60px);
     color: #ffffff;
+
+    @include tablets {
+        font-size: rem(55px);
+        text-align: center;
+    }
 }
 
 .hero__pic {
     width: 42%;
+
+    @include tablets {
+        width: 60%;
+    }
 }
 
 .hero__text {
     width: 40%;
+
+    @include tablets {
+        width: 100%;
+    }
 }  
 
 .hero__pic-img {
@@ -145,30 +76,30 @@
 .pagination {
     position: fixed;
     z-index: 10;
-    right: 54px;
-    top: 90px;
+    right: rem(54px);
+    top: rem(90px);
 }
 
 .pagination__link {
     display: block;
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     box-sizing: border-box;
     background: url(../img/hello/point.png) center center no-repeat;
 }
 
 .pagination__link--active {
-    border: 1px solid white;
+    border: rem(1px) solid white;
     border-radius: 50%;
 }
 
 .pagination__link:hover {
-    border: 1px solid white;
+    border: rem(1px) solid white;
     border-radius: 50%;
 }
 
 .pagination__item {
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
 }
 
 .pagination__item:last-child {

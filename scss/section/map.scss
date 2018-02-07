@@ -1,4 +1,5 @@
 .container--maps {
+	height: 100vh;
     max-width: 100vw;
 }
 
@@ -8,27 +9,27 @@
 }
 
 .map__hint {
-    padding: 10px;
-    font-size: 20px;
+    padding: rem(10px);
+    font-size: rem(20px);
 	line-height: 1;
 	color: #ffffff;
     background-color: #f9b43b;
 	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
-	border-radius: 20px;
+	border-radius: rem(20px);
 }
 
 .map__balloon {
-	padding: 20px;
-	font-size: 30px;
+	padding: rem(20px);
+	font-size: rem(30px);
 	line-height: 1;
 	color: #ffffff;
 	background-color: #f9b43b;
 	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
-	border-radius: 20px;
+	border-radius: rem(20px);
 }
 
 .map__burger-img {
 	float: right;
-	height: 100px;
-	width: 100px;
+	height: rem(100px);
+	width: rem(100px);
 }

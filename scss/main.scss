@@ -1,8 +1,14 @@
+//config
+@import "config/mixins.scss";
+@import "config/variables.scss";
+@import "config/media.scss";
+
 /* layout */
 @import "layout/base.scss";
 @import "layout/fonts.scss";
 
 /* section */
+@import "section/header.scss";
 @import "section/hero.scss";
 @import "section/best.scss";
 @import "section/reviews.scss";
@@ -11,5 +17,3 @@
 @import "section/order.scss";
 @import "section/map.scss";
 
-// media
-@import "media.scss";
