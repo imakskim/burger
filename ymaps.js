@@ -29,10 +29,14 @@ var placemarks = [
 function init() {
     var myMap = new ymaps.Map("map", {
         center: [59.92, 30.30],
-        zoom: 12,
+        zoom: 10,
         controls: ['zoomControl'],
-        behaviors: ['drag']
-    });
+        behaviors: ['drag'],
+    })
+    myMap.behaviors.disable('scrollZoom'),
+myMap.behaviors.disable('drag')
+;
+
 
     for (var i = 0; i < placemarks.length; i++) {
         geoObjects[i] = new ymaps.Placemark([placemarks[i].latitude, placemarks[i].longitude],

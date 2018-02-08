@@ -184,14 +184,14 @@ h1, h2, h3, h4 {
   color: #f9b43b;
   font-weight: 400;
   margin: 0rem; }
-  @media screen and (max-width: 480px) {
-    .caption {
-      font-size: 2.5rem;
-      padding-top: 0; } }
   @media screen and (max-width: 768px) {
     .caption {
       font-size: 3.75rem;
       text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .caption {
+      font-size: 3.125rem;
+      padding-top: 0; } }
 
 .hero {
   position: relative;
@@ -240,7 +240,7 @@ h1, h2, h3, h4 {
   color: #ffffff; }
   @media screen and (max-width: 768px) {
     .hero__desc {
-      font-size: 3.4375rem;
+      font-size: 2.8125rem;
       text-align: center; } }
 
 .hero__pic {
