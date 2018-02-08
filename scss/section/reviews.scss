@@ -1,13 +1,19 @@
 .reviews {
-    height: 100vh;
     min-height: 650px;
 }
 
+.container--reviews {
+    max-width: 100vw;
+    margin: 0;
+}
+
 .reviews__list {
+    min-height: 650px;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .reviews__item {
@@ -18,7 +24,6 @@
     justify-content: center;
     background-size: cover;
     filter: grayscale(1);
-    position: relative;
     
     &:hover {
         .reviews__content {
@@ -32,7 +37,7 @@
 }
 
 .reviews__content {
-    position: absolute;
+    width: 100%;
     left: 0%;
     right: 0%;
     top: 0%;
@@ -54,6 +59,10 @@
     margin-top: 15%;
     margin-left: 10%;
     margin-right: 10%;
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .reviews__desc {
@@ -65,10 +74,21 @@
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
+    
+    @include tablets {
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    @include phones {
+        display: none;
+    }
 }
 
-
 .reviews__btn {
+    font-family: 'Ubuntu';
+    font-size: rem(14px);
+    text-transform: uppercase;
     width: rem(110px);
     height: rem(35px);
     color: white;
@@ -78,6 +98,35 @@
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 5%;
+    
+    @include tablets {
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    @include phones {
+        width: rem(120px);
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+.reviews__btn-text {
+    @include phones {
+    display: none;
+}
+}
+
+.reviews__btn-text-phones {
+    display: none;
+
+    @include phones {
+        width: 100%;
+        display: inline;
+    }
 }
 
 
