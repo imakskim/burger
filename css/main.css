@@ -184,6 +184,10 @@ h1, h2, h3, h4 {
   color: #f9b43b;
   font-weight: 400;
   margin: 0rem; }
+  @media screen and (max-width: 480px) {
+    .caption {
+      font-size: 2.5rem;
+      padding-top: 0; } }
   @media screen and (max-width: 768px) {
     .caption {
       font-size: 3.75rem;
@@ -298,6 +302,17 @@ h1, h2, h3, h4 {
   @media screen and (max-width: 768px) {
     .best__list {
       padding-top: 3.125rem; } }
+  @media screen and (max-width: 480px) {
+    .best__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 100px; } }
 
 .best__icon {
   width: 100%;
@@ -309,6 +324,10 @@ h1, h2, h3, h4 {
   .best__icon-natural {
     fill: #8bbe48; }
 
+@media screen and (max-width: 480px) {
+  .best__pic {
+    width: 30%; } }
+
 .best__title {
   text-align: center;
   font-family: 'lifehackmedium';
@@ -316,18 +335,40 @@ h1, h2, h3, h4 {
   color: #2f3234;
   line-height: 1.75875rem;
   margin-top: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .best__title {
+      text-align: left; } }
 
 .best__desc {
   text-align: center;
   font-size: 0.875rem;
   line-height: 1.50438rem;
   margin-top: 0.9375rem; }
+  @media screen and (max-width: 480px) {
+    .best__desc {
+      text-align: left; } }
 
 .best__item {
   width: 28%; }
   @media screen and (max-width: 768px) {
     .best__item {
       width: 29%; } }
+  @media screen and (max-width: 480px) {
+    .best__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 90%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+@media screen and (max-width: 480px) {
+  .best__info {
+    width: 70%; } }
 
 .caption--center {
   text-align: center; }
@@ -337,10 +378,9 @@ h1, h2, h3, h4 {
 
 .caption--best {
   padding-top: 9rem; }
-
-@media screen and (max-width: 768px) {
-  .caption {
-    padding-top: 5rem; } }
+  @media screen and (max-width: 768px) {
+    .caption--best {
+      padding-top: 5rem; } }
 
 .reviews {
   height: 100vh;

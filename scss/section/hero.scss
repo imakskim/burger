@@ -6,7 +6,12 @@
     color: #f9b43b;
     font-weight: 400;
     margin: rem(0px);
-
+    
+    @include phones {
+        font-size: rem(40px);
+        padding-top: 0;
+    }
+    
     @include tablets {
         font-size: rem(60px);
         text-align: center;

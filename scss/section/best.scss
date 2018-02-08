@@ -12,8 +12,14 @@
     @include tablets {
         padding-top: rem(50px);
     }
+    
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
 }
-
 
 .best__icon {
     width: 100%;
@@ -25,9 +31,15 @@
     &-hand {
         fill: #f7b348;
     }
-
+    
     &-natural {
         fill: #8bbe48;
+    }
+}
+
+.best__pic {
+    @include phones {
+        width: 30%;
     }
 }
 
@@ -38,6 +50,10 @@
     color: #2f3234;
     line-height: rem(28.14px);
     margin-top: rem(20px);
+
+    @include phones {
+        text-align: left;
+    }
 }
 
 .best__desc {
@@ -45,6 +61,10 @@
     font-size: rem(14px);
     line-height: rem(24.07px);
     margin-top: rem(15px);
+
+    @include phones {
+        text-align: left;
+    }
 }
 
 .best__item {
@@ -53,22 +73,36 @@
     @include tablets {
         width: 29%;
     }
+
+    @include phones {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        justify-content: space-between;
+    }
+}
+
+.best__info {
+    @include phones {
+        width: 70%;
+    }
 }
 
 .caption {
     &--center {
         text-align: center;
-    }
 
+    }
+    
     &--black {
         color: #303334;
     }
-
+    
     &--best {
         padding-top: rem(144px);
-    }
 
-    @include tablets {
-        padding-top: 5rem;
+        @include tablets {
+            padding-top: 5rem;
+        }
     }
 }
