@@ -2,6 +2,9 @@
     width: 100%;
     background-image: url(../img/advantage/advg_bg.png);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .best__list {
@@ -99,7 +102,7 @@
     }
     
     &--best {
-        padding-top: rem(144px);
+        padding-top: rem(100px);
 
         @include tablets {
             padding-top: 5rem;
