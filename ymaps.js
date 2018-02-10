@@ -32,10 +32,7 @@ function init() {
         zoom: 10,
         controls: ['zoomControl'],
         behaviors: ['drag'],
-    })
-    myMap.behaviors.disable('scrollZoom'),
-myMap.behaviors.disable('drag')
-;
+    });
 
 
     for (var i = 0; i < placemarks.length; i++) {
