@@ -82,7 +82,9 @@
 }
 
 .hamburger-menu-link-container {
-    z-index: 1;
+    @include tablets {
+        z-index: 1;
+    }
 }
 
 .hamburger-menu-link__bars {
@@ -94,12 +96,16 @@
     background: url(../img/header/menu_btn.png) center center no-repeat;
     background-size: cover;
 
-    &--active {
-        background: url(../img/header/close.png) center center no-repeat;
-        background-size: cover;
+    @include tablets {
+        z-index: 1;
+        &--active {
+            background: url(../img/header/close.png) center center no-repeat;
+            background-size: cover;
     }
-
+    
+    }
 }
+
 
 .menu__list {
     display: flex;
