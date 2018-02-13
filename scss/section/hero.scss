@@ -24,6 +24,9 @@
     background-image: url(../img/hello/video-bg.png);
     background-size: cover;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container__hero {

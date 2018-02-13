@@ -1,0 +1,124 @@
+.slider {
+    background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__slider {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider__arrow {
+    height: 90%;
+    width: 5%;
+}
+
+.slider__arrow-icon {
+    height: 30px;
+    width: 30px;
+    fill: white;
+
+    &--left {
+        transform: rotate(90deg);
+    }
+    &--right {
+        transform: rotate(-90deg);
+    }
+}
+
+.slider__item {
+    width: 85%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.slider__item-burger {
+    width: 48%;
+}
+
+.slider__item-desc {
+    width: 48%;
+}
+
+.slider__burger-img {
+    width: 98%;
+}
+
+.caption--slider {
+    color: white;
+    line-height: rem(63.93px);
+}
+
+.slider__item-text {
+    font-size: rem(14px);
+    color: white;
+}
+
+.slider__item-consist {
+    width: 90px;
+    height: 90px;
+    background:  #f08c33;
+    border: .5px solid #e35028;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__item-consist-icon {
+    fill: white;
+    width: 46px;
+    height: 44px;
+}
+
+.slider__item-consist-text {
+    font-family: 'Gagalinregular';
+    color: white;
+    font-size: rem(14px);
+}
+
+.slider__item-order {
+display: flex;
+align-items: center;
+}
+
+.slider__item-price {
+    font-family: 'Gagalinregular';
+    font-size: rem(36px);
+    color: #e35028;
+
+    &--bigger {
+        font-size: rem(72px);
+    }
+}
+
+.slider__item-calories {
+    width: 60px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    background: url(../img/slider/kkal.png)center center no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
