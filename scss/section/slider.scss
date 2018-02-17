@@ -8,16 +8,23 @@
 .container__slider {
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+
+
 }
 
 .slider__content {
-    display: flex;
+    width: 90% !important;
+    // display: flex;
     overflow: hidden;
+    
+    @include tablets {
+        width: 70% !important;
+    }
 }
 
-.slider__list {
+.slider__list-content {
     max-height: 650px;
     height: 100%;
     width: 100%;
@@ -25,18 +32,21 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
-
 }
+
 
 .slider__arrow {
     height: 90%;
     width: 5%;
+    pointer-events: auto;
+    
 }
 
 .slider__arrow-icon {
     height: 30px;
     width: 30px;
     fill: white;
+    pointer-events: auto;
 
     &--left {
         transform: rotate(90deg);
@@ -48,7 +58,7 @@
 
 
 .slider__item {
-    width: 85%;
+    width: 100%;
     min-height: 650px;
     display: flex;
     align-items: center;
@@ -64,10 +74,11 @@
 
     @include tablets {
         width: 70%;
+        margin-top: 60px;
     }
 
     @include phones {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 }
 
@@ -89,8 +100,9 @@
     line-height: rem(63.93px);
 
     @include tablets {
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
+
     }
 }
 
@@ -113,17 +125,21 @@
     justify-content: center;
     align-items: center;
 
-    // @include tablets {
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0;
-    // }
+    @include tablets {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .slider__item-consist-icon {
     fill: white;
     width: 46px;
     height: 44px;
+
+    @include tablets {
+        width: 33px;
+        height: 32px;
+    }
 }
 
 .slider__item-consist-text {
@@ -148,7 +164,18 @@ align-items: center;
 
     &--bigger {
         font-size: rem(72px);
+        @include phones {
+            font-size: rem(47px);
+        }
     }
+    
+    @include phones {
+        font-size: rem(28px);
+    }
+}
+
+.slider__button {
+    margin-left: 15px;
 }
 
 .slider__item-calories {
@@ -164,9 +191,10 @@ align-items: center;
         left: initial;
         right: 20px;
         top: 20px;
+        width: 50px;
+        height: 80px;
     }
 }
-
 
 
 

@@ -104,3 +104,31 @@ teamTrigger4.addEventListener ('click', function(){
         teamAcco4.classList.add('team__acco-item--active')
     }
 });
+
+let prev = document.querySelector ('.js-owl-prev')
+let next = document.querySelector ('.js-owl-next')
+let owl = $('.owl-carousel')
+// owlcaruosel
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        items:1
+    })
+});
+
+next.addEventListener("click", function(){
+    owl.trigger("next.owl.carousel")
+});
+prev.addEventListener("click", function() {
+    owl.trigger("prev.owl.carousel")
+});
+
+$(document).ready(function () {
+    $('.js-fullpage').fullpage();
+});
+
+
+
+
+
+
