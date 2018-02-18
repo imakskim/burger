@@ -105,10 +105,10 @@ teamTrigger4.addEventListener ('click', function(){
     }
 });
 
-let prev = document.querySelector ('.js-owl-prev')
-let next = document.querySelector ('.js-owl-next')
+// owlcaruosel //
+let prev = document.querySelector ('.js-owl-prev');
+let next = document.querySelector ('.js-owl-next');
 let owl = $('.owl-carousel')
-// owlcaruosel
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         loop:true,
@@ -123,9 +123,64 @@ prev.addEventListener("click", function() {
     owl.trigger("prev.owl.carousel")
 });
 
+// onePageScroll //
 $(document).ready(function () {
     $('.js-fullpage').fullpage();
+    FastClick.attach(document.body);
+
+    if (targetIndex == 0) {
+        heroLink.classList.add('pagination__link--active');
+        bestLink.classList.remove('pagination__link--active');
+        
+        heroLink.style.pointerEvents = 'none';
+        bestLink.style.pointerEvents = 'auto';
+    };
+
+    if (targetIndex == 1) {
+        heroLink.classList.remove('pagination__link--active');
+        bestLink.classList.add('pagination__link--active');
+        
+        heroLink.style.pointerEvents = 'auto';
+        bestLink.style.pointerEvents = 'none';
+    }
 });
+
+// // pagination //
+// let heroLink = document.querySelector ('.js-heroLink');
+// let bestLink = document.querySelector ('.js-bestLink');
+// let sliderLink = document.querySelector ('.js-sliderLink');
+// let teamLink = document.querySelector ('.js-teamLink');
+// let selectionLink = document.querySelector ('.js-selectionLink');
+// let reviewsLink = document.querySelector ('.js-reviewsLink');
+// let orderLink = document.querySelector ('.js-orderLink');
+// let yamapLink = document.querySelector ('.js-yamapLink');
+
+// let hero = document.querySelector ('.hero');
+// let best = document.querySelector ('.best');
+// let slider = document.querySelector ('.slider');
+// let team = document.querySelector ('.team');
+// let selection = document.querySelector ('.selection');
+// let reviews = document.querySelector ('.reviews');
+// let order = document.querySelector ('.order');
+// let yamap = document.querySelector ('.yamap');
+
+
+// bestLink.addEventListener("click", function(event){
+//     event.preventDefault();
+    // hero.style.transform = "translateY(-100%)";
+    // best.style.transform = "translateY(-100%)";
+    // slider.style.transform = "translateY(-100%)";
+    // team.style.transform = "translateY(-100%)";
+    // selection.style.transform = "translateY(-100%)";
+    // reviews.style.transform = "translateY(-100%)";
+    // order.style.transform = "translateY(-100%)";
+//     // yamap.style.transform = "translateY(-100%)";
+//     currIndex = '1';
+//     that.gotoTarget(targetIndex);
+//     console.log(currIndex)
+// });
+
+
 
 
 

@@ -28,61 +28,63 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="container container__header">
-                <div class="logo__container">
-                    <div class="logo">
-                        <img src="img/hello/logo.png" alt="" class="logo__pic">
-                    </div>
-                </div>
-                <div class="menu__container">
-                    <nav class="header__menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="" class="menu__link">О нас</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Бургеры</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Команда</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Меню</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Отзывы</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Контакты</a>
-                            </li>
-                            <li class="menu__item menu__item--recieve">
-                                <button class="recieve">Заказать</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="hamburger-menu-link">
-                    <button class="recieve">Заказать</button>
-                    <button class="hamburger-menu-link__bars "></button>
-                </div>
-            </div>
-        </header>
         <div class="sections js-fullpage">
             <section class="section hero">
-                <div class="container container__hero">
-                    <div class="hero__content">
-                        <div class="hero__pic">
-                            <img class="hero__pic-img" src="./img/hello/steam-burger.png" alt="">
+                <header class="header">
+                    <div class="container container__header">
+                        <div class="logo__container">
+                            <div class="logo">
+                                <img src="img/hello/logo.png" alt="" class="logo__pic">
+                            </div>
                         </div>
-                        <h1 class="hero__text">
-                            <div class="caption">Мы Делаем</div>
-                            <div class="hero__desc">Натуральные бургеры</div>
-                        </h1>
+                        <div class="menu__container">
+                            <nav class="header__menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">О нас</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">Бургеры</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">Команда</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">Меню</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">Отзывы</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">Контакты</a>
+                                    </li>
+                                    <li class="menu__item menu__item--recieve">
+                                        <button class="recieve">Заказать</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="hamburger-menu-link">
+                            <button class="recieve">Заказать</button>
+                            <button class="hamburger-menu-link__bars "></button>
+                        </div>
+                    </div>
+                </header>
+                <div class="hero__block">
+                    <div class="container container__hero">
+                        <div class="hero__content">
+                            <div class="hero__pic">
+                                <img class="hero__pic-img" src="./img/hello/steam-burger.png" alt="">
+                            </div>
+                            <h1 class="hero__text">
+                                <div class="caption">Мы Делаем</div>
+                                <div class="hero__desc">Натуральные бургеры</div>
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="section best">
+            <section class="section best" id="2">
                 <div class="container">
                     <div class="caption__best-container">
                         <h2 class="caption caption--center caption--black caption--best">Мы лучшие</h2>
@@ -139,7 +141,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section slider">
+            <section class="section slider" id="3">
                 <div class="container container__slider">
                     <div class="slider__arrow js-owl-prev">
                         <svg class="slider__arrow-icon slider__arrow-icon--left">
@@ -213,7 +215,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section team">
+            <section class="section team" id="4">
                 <div class="container continer__team">
                     <div class="team__container">
                         <div class="team__content">
@@ -291,7 +293,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section selection">
+            <section class="section selection" id="5">
                 <div class="container container__selection">
                     <div class="selection__caption-block">
                         <h2 class="caption  caption--selection">меню</h2>
@@ -338,7 +340,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section reviews">
+            <section class="section reviews" id="6">
                 <div class="container container--reviews">
                     <ul class="reviews__list">
                         <li class="reviews__item" style="background-image: url('./img/reviews/photo1.png'); background-size: cover;">
@@ -448,7 +450,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section order">
+            <section class="section order" id="7">
                 <div class="container container__order">
                     <div class="order__caption-block">
                         <h2 class="caption caption--order">Закажите доставку</h2>
@@ -523,7 +525,7 @@
                     </form>
                 </div>
             </section>
-            <section class="section">
+            <section class="section yamap" id="8">
                 <div class="container container--maps">
                     <div id="map" class="map"></div>
                 </div>
@@ -534,26 +536,29 @@
             <nav class="pagination__menu">
                 <ul class="pagination__list">
                     <li class="pagination__item">
-                        <a href="" class="pagination__link pagination__link--active"></a>
+                        <a href="" class="pagination__link js-heroLink pagination__link--active"></a>
                     </li>
                     <li class="pagination__item">
-                        <a href="" class="pagination__link">
+                        <a href="" class="pagination__link js-bestLink">
                         </a>
                     </li>
                     <li class="pagination__item">
-                        <a href="" class="pagination__link"></a>
+                        <a href="" class="pagination__link js-sliderLink"></a>
                     </li>
                     <li class="pagination__item">
-                        <a href="" class="pagination__link"></a>
+                        <a href="" class="pagination__link js-teamLink"></a>
                     </li>
                     <li class="pagination__item">
-                        <a href="" class="pagination__link"></a>
+                        <a href="" class="pagination__link js-selectionLink"></a>
                     </li>
                     <li class="pagination__item">
-                        <a href="" class="pagination__link"></a>
+                        <a href="" class="pagination__link js-reviewsLink"></a>
                     </li>
                     <li class="pagination__item">
-                        <a href="" class="pagination__link"></a>
+                        <a href="" class="pagination__link js-orderLink"></a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="" class="pagination__link js-yamapLink"></a>
                     </li>
                 </ul>
             </nav>
@@ -562,7 +567,7 @@
     <script src="ymaps.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src='js/jquery.fullpage.min.js'></script>
+    <script src='js/jquery.fullpage.js'></script>
 </body>
 
 </html>
