@@ -62,6 +62,7 @@
 
     @include tablets {
         text-align: center;
+        margin-top: 15px;
     }
 }
 
@@ -76,7 +77,7 @@
     margin-right: 10%;
     
     @include tablets {
-        margin-top: 5%;
+        margin-top: 2%;
         text-align: center;
     }
 
@@ -102,8 +103,8 @@
     
     @include tablets {
         margin: 0 auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
     
     @include phones {

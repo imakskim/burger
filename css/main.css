@@ -509,7 +509,8 @@ h1, h2, h3, h4 {
   margin-right: 10%; }
   @media screen and (max-width: 768px) {
     .reviews__title {
-      text-align: center; } }
+      text-align: center;
+      margin-top: 15px; } }
 
 .reviews__desc {
   font-family: 'Ubuntu-Light', Arial, serif;
@@ -522,7 +523,7 @@ h1, h2, h3, h4 {
   margin-right: 10%; }
   @media screen and (max-width: 768px) {
     .reviews__desc {
-      margin-top: 5%;
+      margin-top: 2%;
       text-align: center; } }
   @media screen and (max-width: 480px) {
     .reviews__desc {
@@ -545,8 +546,8 @@ h1, h2, h3, h4 {
   @media screen and (max-width: 768px) {
     .reviews__btn {
       margin: 0 auto;
-      margin-top: 5%;
-      margin-bottom: 5%; } }
+      margin-top: 2%;
+      margin-bottom: 2%; } }
   @media screen and (max-width: 480px) {
     .reviews__btn {
       width: 7.5rem;
@@ -1211,3 +1212,93 @@ h1, h2, h3, h4 {
 
 .pagination__item:last-child {
   margin-bottom: 0; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 5, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 10000; }
+
+.container--overlay {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.contentOverlay {
+  position: relative;
+  width: 400px;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font: 16px Helvetica, sans-serif;
+  margin: 0; }
+
+.closeOverlay {
+  font: 16px Helvetica, sans-serif;
+  color: #f7b348;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none; }
+
+.contentOverlayText {
+  color: black; }
+  @media screen and (max-width: 768px) {
+    .contentOverlayText {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 0; } }
+
+.reviews__titleOverlay {
+  color: black;
+  margin-left: 0; }
+  @media screen and (max-width: 768px) {
+    .reviews__titleOverlay {
+      margin: 0; } }
+
+.reviews__descOverlay {
+  color: black;
+  margin: 0;
+  margin-top: 20px; }
+  @media screen and (max-width: 768px) {
+    .reviews__descOverlay {
+      margin: 0; } }
