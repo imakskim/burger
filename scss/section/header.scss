@@ -163,10 +163,21 @@
     font-size: rem(13px);
     font-weight: 500;
     text-align: center;
+    align-items: center;
     color: white;
     box-sizing: border-box;
 
     @include tablets {
         margin-right: rem(20px);
+    }
+}
+.header__recieve-btn {
+    @include phones {
+        margin-top: 8px;
+        display: block;
+    }
+    @include tablets {
+        margin-top: 8px;
+        display: block;
     }
 }

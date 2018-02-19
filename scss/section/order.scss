@@ -1,12 +1,17 @@
 .order {
     background: url(../img/order/order_bg.png) center center no-repeat;
     background-size: cover;
+    display: flex;
 }
 
 .container__order {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    @include phones {
+        justify-content: flex-start;
+    }
 }
 
 .form {
@@ -31,14 +36,15 @@
 .caption--order {
     text-align: center;
     margin-bottom: 10%;
-    margin-top: 15vh;
-    
     @include tablets {
-    margin-top: 5vh;
-
+        margin-top: 5vh;
+    }
+    @include phones {
+        margin-bottom: 0;
+        font-size: rem(36px);
+        line-height: rem(36px);
     }
 }
-
 
 .form__row {
     margin-bottom: rem(20px); 
@@ -46,6 +52,15 @@
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
+    @include phones {
+        margin-bottom: 10px;
+    }
+}
+
+.form__title {
+    @include phones {
+        font-size: rem(12px);
+    }
 }
 
 .form__block {
@@ -74,6 +89,9 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        @include phones {
+            justify-content: center;
+        }
     }
 }
 

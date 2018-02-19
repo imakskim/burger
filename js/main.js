@@ -1,5 +1,5 @@
 
-// OPEN MENU ///
+/// OPEN MENU ///
 const openMenu = document.querySelector('.header__menu');
 const trigger = document.querySelector('.hamburger-menu-link__bars');
 
@@ -129,26 +129,10 @@ $(document).ready(function () {
     FastClick.attach(document.body);
 });
 
+// header menu nav //
 
-// var heroLink = document.querySelector ('.js-heroLink');
-// var bestLink = document.querySelector ('.js-bestLink');
-// var sliderLink = document.querySelector ('.js-sliderLink');
-// var teamLink = document.querySelector ('.js-teamLink');
-// var selectionLink = document.querySelector ('.js-selectionLink');
-// var reviewsLink = document.querySelector ('.js-reviewsLink');
-// var orderLink = document.querySelector ('.js-orderLink');
-// var yamapLink = document.querySelector ('.js-yamapLink');
 
-// // var i = 0;
-// // var anchorLinks = [heroLink, bestLink, sliderLink, teamLink, selectionLink, reviewsLink, orderLink, yamapLink];
-// // var lengthLinks = anchorLinks.length;
 
-// for (i = 0; i < (lengthLinks); i++) {
-//     console.log(anchorLinks[i]);
-//     let currLink = (anchorLinks[i]);
-//     currLink.classList.remove('pagination__link--active');
-//     currLink.style.pointerEvents = 'none';
-// };
 
 
 

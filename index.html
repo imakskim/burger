@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Burgers</title>
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 
@@ -41,32 +41,34 @@
                             <nav class="header__menu">
                                 <ul class="menu__list">
                                     <li class="menu__item">
-                                        <a href="" class="menu__link">О нас</a>
+                                        <a href="" class="menu__link js-bestMenuLink">О нас</a>
                                     </li>
                                     <li class="menu__item">
-                                        <a href="" class="menu__link">Бургеры</a>
+                                        <a href="" class="menu__link js-sliderMenuLink">Бургеры</a>
                                     </li>
                                     <li class="menu__item">
-                                        <a href="" class="menu__link">Команда</a>
+                                        <a href="" class="menu__link js-teamMenuLink">Команда</a>
                                     </li>
                                     <li class="menu__item">
-                                        <a href="" class="menu__link">Меню</a>
+                                        <a href="" class="menu__link js-selectionMenuLink">Меню</a>
                                     </li>
                                     <li class="menu__item">
-                                        <a href="" class="menu__link">Отзывы</a>
+                                        <a href="" class="menu__link js-reviewsMenuLink" >Отзывы</a>
                                     </li>
                                     <li class="menu__item">
-                                        <a href="" class="menu__link">Контакты</a>
+                                        <a href="" class="menu__link js-contactsMenuLink">Контакты</a>
                                     </li>
-                                    <li class="menu__item menu__item--recieve">
-                                        <button class="recieve">Заказать</button>
+                                    <li class="menu__item menu__item--recieve js-yamapMenuLink">
+                                        <button class="recieve js-recieve">Заказать</button>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="hamburger-menu-link">
-                            <button class="recieve">Заказать</button>
-                            <button class="hamburger-menu-link__bars "></button>
+                            <a class="recieve">
+                                <span class="header__recieve-btn">Заказать</span>
+                            </a>
+                            <a class="hamburger-menu-link__bars "></a>
                         </div>
                     </div>
                 </header>
@@ -100,7 +102,7 @@
                                 <div class="best__info">
                                     <div class="best__title">100% свежее мясо</div>
                                     <div class="best__desc">
-                                        <p class="">
+                                        <p class="best__desc-text">
                                             Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
                                         </p>
                                     </div>
@@ -115,7 +117,7 @@
                                 <div class="best__info">
                                     <div class="best__title">Ручная сборка</div>
                                     <div class="best__desc">
-                                        <p class="">
+                                        <p class="best__desc-text">
                                             Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский
                                             пафос.
                                         </p>
@@ -131,7 +133,7 @@
                                 <div class="best__info">
                                     <div class="best__title">Натуральные ингредиенты</div>
                                     <div class="best__desc">
-                                        <p class="">
+                                        <p class="best__desc-text">
                                             Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
                                         </p>
                                     </div>
@@ -164,7 +166,7 @@
                                         <div class="slider__item-order">
                                             <span class="slider__item-price">
                                                 <span class="slider__item-price--bigger">500</span>рублей</span>
-                                            <button class="recieve slider__button">Заказать</button>
+                                            <button class="recieve slider__button js-recieve2">Заказать</button>
                                         </div>
                                     </div>
                                 </div>

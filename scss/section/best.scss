@@ -42,7 +42,7 @@
 
 .best__pic {
     @include phones {
-        width: 30%;
+        width: 20%;
     }
 }
 
@@ -56,6 +56,8 @@
 
     @include phones {
         text-align: left;
+        font-size: 1.2rem;
+        margin-top: 0;
     }
 }
 
@@ -67,6 +69,13 @@
 
     @include phones {
         text-align: left;
+        margin-top: .4rem;
+    }
+}
+
+.best__desc-text {
+    @include phones {
+        font-size: .8rem;
     }
 }
 
@@ -106,6 +115,9 @@
 
         @include tablets {
             padding-top: 5rem;
+        }
+        @include phones {
+            padding-top: 4rem;
         }
     }
 }

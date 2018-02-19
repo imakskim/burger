@@ -10,8 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .slider__content {
@@ -21,6 +19,9 @@
     
     @include tablets {
         width: 70% !important;
+    }
+    @include phones {
+        width: 85% !important;
     }
 }
 
@@ -40,6 +41,9 @@
     width: 5%;
     pointer-events: auto;
     
+    @include phones {
+        display: flex;
+    }
 }
 
 .slider__arrow-icon {
@@ -67,6 +71,11 @@
     @include tablets {
         flex-direction: column;
     }
+
+    @include phones {
+        min-height: initial;
+    }
+
 }
 
 .slider__item-burger {
@@ -176,6 +185,9 @@ align-items: center;
 
 .slider__button {
     margin-left: 15px;
+    @include phones {
+        margin-left: 10px;
+    }
 }
 
 .slider__item-calories {
