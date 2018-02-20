@@ -1079,7 +1079,7 @@ h1, h2, h3, h4 {
       margin-top: 60px; } }
   @media screen and (max-width: 480px) {
     .slider__item-burger {
-      margin-top: 55px; } }
+      margin-top: 40px; } }
 
 .slider__item-desc {
   width: 48%; }
@@ -1249,7 +1249,7 @@ h1, h2, h3, h4 {
   padding: 0.4375rem 0; }
 
 .footer__container {
-  max-width: 945px;
+  max-width: 1100px;
   max-height: auto;
   margin: 0 auto;
   display: -webkit-box;
