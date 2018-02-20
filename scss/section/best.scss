@@ -76,6 +76,7 @@
 .best__desc-text {
     @include phones {
         font-size: .8rem;
+        line-height: rem(18px);
     }
 }
 

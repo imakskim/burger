@@ -1,0 +1,106 @@
+.footer {
+    display: none;
+	width: 100%;
+	background: url('../img/footer/footer.png') repeat center center;
+	position: absolute;
+	bottom: 0;
+	padding: rem(7px) 0;
+}
+
+.footer__container {
+	max-width: 945px;
+	max-height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	@include phones {
+		flex-direction: column;
+		width: 100%;
+		padding-bottom: rem(30px);
+	}
+}
+
+.footer__contacts, .footer__socials {
+	width: 50%;
+	@include phones {
+		width: 100%;
+	}
+}
+
+.footer__contacts {
+	@include phones {
+		text-align: center;
+		padding: 0;
+		margin-bottom: rem(17px);
+	}
+}
+
+// address
+
+.contacts__address {
+	font-family: 'Ubuntu';
+	font-weight: 300;
+	font-size: rem(14px);
+	color: #fff;
+	@include phones {
+		font-size: rem(15px);
+	}
+}
+
+.contacts__phone {
+	text-decoration: none;
+	vertical-align: middle;
+	color: red;
+}
+
+.phone__icon {
+	width: rem(11px);
+	height: rem(11px);
+	margin-right: rem(4px);
+	fill: red;
+}
+
+.phone__text {
+	font-family: 'Ubuntu';
+	font-weight: 700;
+	font-size: rem(14px);
+	@include phones {
+		font-size: rem(15px);
+	}
+}
+
+// socials
+
+.footer__socials {
+	text-align: right;
+	@include phones {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.socials__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	text-align: center;
+}
+
+.socials__item {
+	margin-left: rem(15px);
+}
+
+.socials__link-icon {
+	width: rem(25px);
+	height: rem(20px);
+	fill: #595959;
+	transition: .4s;
+	&:hover {
+		fill: #fff;
+	}
+	@include phones {
+		width: rem(27px);
+		height: rem(23px);
+	}
+}

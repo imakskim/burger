@@ -28,6 +28,11 @@
     color: #fff;
     font: 16px Helvetica, sans-serif;
     margin: 0;
+
+    @include phones {
+        width: 80vw;
+        height: 60vh;
+    }
   }
   
   .closeOverlay {
@@ -66,6 +71,19 @@
   }
 
   .reviews__descOverlay {
+    font-family: 'Ubuntu-Light', Arial, serif;
+    font-size: rem(14px);
+    font-weight: 300;
+    color: black;
+    line-height: rem(24px);
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    @include tablets {
+        margin-top: 2%;
+        text-align: center;
+    }
       color: black;
       margin: 0;
       margin-top: 20px;

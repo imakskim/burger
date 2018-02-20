@@ -246,7 +246,7 @@ h1, h2, h3, h4 {
 
 .hero {
   position: relative;
-  background-image: url(../img/hello/video-bg.png);
+  background: url(../img/hello/video-bg.png) center center;
   background-size: cover;
   width: 100%; }
 
@@ -399,7 +399,8 @@ h1, h2, h3, h4 {
 
 @media screen and (max-width: 480px) {
   .best__desc-text {
-    font-size: .8rem; } }
+    font-size: .8rem;
+    line-height: 1.125rem; } }
 
 .best__item {
   width: 28%; }
@@ -499,6 +500,15 @@ h1, h2, h3, h4 {
   background: rgba(20, 20, 20, 0.7);
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  @media screen and (max-width: 480px) {
+    .reviews__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .reviews__title {
   font-family: 'gagalinregular', Arial, serif;
@@ -839,7 +849,7 @@ h1, h2, h3, h4 {
   margin-right: 2%; }
   @media screen and (max-width: 480px) {
     .form__row {
-      margin-bottom: 10px; } }
+      margin-bottom: 5px; } }
 
 @media screen and (max-width: 480px) {
   .form__title {
@@ -908,6 +918,9 @@ h1, h2, h3, h4 {
   border-radius: 0.3125rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  @media screen and (max-width: 480px) {
+    .form__big-text {
+      height: 4.8em; } }
 
 .form__radio {
   margin-right: 0.625rem; }
@@ -1066,7 +1079,7 @@ h1, h2, h3, h4 {
       margin-top: 60px; } }
   @media screen and (max-width: 480px) {
     .slider__item-burger {
-      margin-top: 80px; } }
+      margin-top: 55px; } }
 
 .slider__item-desc {
   width: 48%; }
@@ -1085,6 +1098,12 @@ h1, h2, h3, h4 {
     .caption--slider {
       width: 100%;
       margin: 0 auto; } }
+  @media screen and (max-width: 480px) {
+    .caption--slider {
+      width: 100%;
+      margin: 0 auto;
+      font-size: 2.5rem;
+      line-height: 2.25rem; } }
 
 .slider__item-text {
   font-size: 0.875rem;
@@ -1116,6 +1135,11 @@ h1, h2, h3, h4 {
     .slider__item-consist {
       width: 60px;
       height: 60px; } }
+  @media screen and (max-width: 480px) {
+    .slider__item-consist {
+      width: 60px;
+      height: 60px;
+      top: 0; } }
 
 .slider__item-consist-icon {
   fill: white;
@@ -1178,6 +1202,9 @@ h1, h2, h3, h4 {
       top: 20px;
       width: 50px;
       height: 80px; } }
+  @media screen and (max-width: 480px) {
+    .slider__item-calories {
+      top: 0; } }
 
 .pagination {
   position: fixed;
@@ -1212,6 +1239,118 @@ h1, h2, h3, h4 {
 
 .pagination__item:last-child {
   margin-bottom: 0; }
+
+.footer {
+  display: none;
+  width: 100%;
+  background: url("../img/footer/footer.png") repeat center center;
+  position: absolute;
+  bottom: 0;
+  padding: 0.4375rem 0; }
+
+.footer__container {
+  max-width: 945px;
+  max-height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media screen and (max-width: 480px) {
+    .footer__container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      padding-bottom: 1.875rem; } }
+
+.footer__contacts, .footer__socials {
+  width: 50%; }
+  @media screen and (max-width: 480px) {
+    .footer__contacts, .footer__socials {
+      width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .footer__contacts {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1.0625rem; } }
+
+.contacts__address {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #fff; }
+  @media screen and (max-width: 480px) {
+    .contacts__address {
+      font-size: 0.9375rem; } }
+
+.contacts__phone {
+  text-decoration: none;
+  vertical-align: middle;
+  color: red; }
+
+.phone__icon {
+  width: 0.6875rem;
+  height: 0.6875rem;
+  margin-right: 0.25rem;
+  fill: red; }
+
+.phone__text {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 0.875rem; }
+  @media screen and (max-width: 480px) {
+    .phone__text {
+      font-size: 0.9375rem; } }
+
+.footer__socials {
+  text-align: right; }
+  @media screen and (max-width: 480px) {
+    .footer__socials {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: center; }
+
+.socials__item {
+  margin-left: 0.9375rem; }
+
+.socials__link-icon {
+  width: 1.5625rem;
+  height: 1.25rem;
+  fill: #595959;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
+  .socials__link-icon:hover {
+    fill: #fff; }
+  @media screen and (max-width: 480px) {
+    .socials__link-icon {
+      width: 1.6875rem;
+      height: 1.4375rem; } }
 
 .overlay {
   position: fixed;
@@ -1256,6 +1395,10 @@ h1, h2, h3, h4 {
   color: #fff;
   font: 16px Helvetica, sans-serif;
   margin: 0; }
+  @media screen and (max-width: 480px) {
+    .contentOverlay {
+      width: 80vw;
+      height: 60vh; } }
 
 .closeOverlay {
   font: 16px Helvetica, sans-serif;
@@ -1296,9 +1439,21 @@ h1, h2, h3, h4 {
       margin: 0; } }
 
 .reviews__descOverlay {
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: black;
+  line-height: 1.5rem;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   color: black;
   margin: 0;
   margin-top: 20px; }
+  @media screen and (max-width: 768px) {
+    .reviews__descOverlay {
+      margin-top: 2%;
+      text-align: center; } }
   @media screen and (max-width: 768px) {
     .reviews__descOverlay {
       margin: 0; } }

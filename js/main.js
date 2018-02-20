@@ -140,57 +140,62 @@ const openButton7 = document.querySelector(".openOverlay7");
 const openButton8 = document.querySelector(".openOverlay8");
 
 function openOverlay(content) {
-  const overlayElement = document.createElement("div");
-  overlayElement.classList.add("overlay");
+    const overlayElement = document.createElement("div");
+    overlayElement.classList.add("overlay");
 
-  const template = document.querySelector("#overlayTemplate");
-  overlayElement.innerHTML = template.innerHTML; 
+    const template = document.querySelector("#overlayTemplate");
+    overlayElement.innerHTML = template.innerHTML;
 
-  const closeElement = overlayElement.querySelector(".closeOverlay");
-  closeElement.addEventListener("click", function() {
-    document.body.removeChild(overlayElement);
-  });
+    const closeElement = overlayElement.querySelector(".closeOverlay");
+    closeElement.addEventListener("click", function () {
+        document.body.removeChild(overlayElement);
+    });
 
-  const contentElement = overlayElement.querySelector(".contentOverlay");
-  const contentElementText = overlayElement.querySelector(".contentOverlayText")
-  contentElementText.innerHTML = content;
+    const contentElement = overlayElement.querySelector(".contentOverlay");
+    const contentElementText = overlayElement.querySelector(".contentOverlayText")
+    contentElementText.innerHTML = content;
 
-  return overlayElement;
+    return overlayElement;
 }
 
-const reviewsOverlay1 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__desc reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
-const reviewsOverlay2 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__desc reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
-const reviewsOverlay3 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__desc reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
-const reviewsOverlay4 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__desc reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
-const reviewsOverlay5 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__desc reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
-const reviewsOverlay6 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__desc reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
-const reviewsOverlay7 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__desc reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
-const reviewsOverlay8 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__desc reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
+const reviewsOverlay1 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
+const reviewsOverlay2 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
+const reviewsOverlay3 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
+const reviewsOverlay4 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
+const reviewsOverlay5 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
+const reviewsOverlay6 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
+const reviewsOverlay7 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
+const reviewsOverlay8 = openOverlay(' <span class="reviews__title reviews__titleOverlay"> Константин Спилберг</span> <br><p class="reviews__descOverlay">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>');
 
-openButton1.addEventListener("click", function() {
-  document.body.appendChild(reviewsOverlay1);
+openButton1.addEventListener("click", function () {
+    document.body.appendChild(reviewsOverlay1);
 });
-openButton2.addEventListener("click", function() {
+openButton2.addEventListener("click", function () {
     document.body.appendChild(reviewsOverlay2);
 });
-openButton3.addEventListener("click", function() {
+openButton3.addEventListener("click", function () {
     document.body.appendChild(reviewsOverlay3);
 });
-openButton4.addEventListener("click", function() {
+openButton4.addEventListener("click", function () {
     document.body.appendChild(reviewsOverlay4);
 });
-openButton5.addEventListener("click", function() {
+openButton5.addEventListener("click", function () {
     document.body.appendChild(reviewsOverlay5);
 });
-openButton6.addEventListener("click", function() {
+openButton6.addEventListener("click", function () {
     document.body.appendChild(reviewsOverlay6);
 });
-openButton7.addEventListener("click", function() {
+openButton7.addEventListener("click", function () {
     document.body.appendChild(reviewsOverlay7);
 });
-openButton8.addEventListener("click", function() {
+openButton8.addEventListener("click", function () {
     document.body.appendChild(reviewsOverlay8);
 });
+
+
+
+
+
 
 
 

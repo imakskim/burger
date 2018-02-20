@@ -22,6 +22,10 @@ var contactsMenuLink = document.querySelector('.js-contactsMenuLink');
 var recieveMenuLink = document.querySelector('.js-recieve');
 var recieveMenuLink2 = document.querySelector('.js-recieve2');
 
+var appeareFooter = document.querySelector('.js-appearance-footer');
+var appeareTouchFooter = document.querySelector('.js-appeareTouchFooter');
+var position;
+
 // for cycles //
 var n = 0;
 var i = 0;
@@ -69,8 +73,8 @@ var lengthLinks = anchorLinks.length;
 			initHTML: function () {
 				this.$el.children().css({
 					'height': '100vh',
-					'transition': 'all 0.3s',
-					'-webkit-transition': 'all 0.3s'
+					'transition': 'all 0.2s',
+					'-webkit-transition': 'all 0.2s'
 				});
 			},
 			bindEvent: function () {
@@ -161,7 +165,14 @@ var lengthLinks = anchorLinks.length;
 						};
 						yamapLink.classList.add('pagination__link--active');
 						yamapLink.style.pointerEvents = 'none';
+						appeareFooter.style.display = 'block';
+					}else {
+						appeareFooter.style.display = 'none';
 					};
+					if (targetIndex == 8) {
+						appeareFooter.style.display = 'block';
+					};
+					console.log(targetIndex);
 
 				}, 100));
 
@@ -253,8 +264,21 @@ var lengthLinks = anchorLinks.length;
 							currLink.classList.remove('pagination__link--active');
 							currLink.style.pointerEvents = 'auto';
 						};
+						if (targetIndex == 7) {
+							appeareFooter.style.display = 'block';
+						}else {
+							appeareFooter.style.display = 'none';
+						};
 						yamapLink.classList.add('pagination__link--active');
 						yamapLink.style.pointerEvents = 'none';
+					};
+
+					position = appeareTouchFooter.style.transform;
+					console.log(position);
+					if (position == 'translateY(-700%)') {
+						appeareFooter.style.display = 'block';
+					}else {
+						appeareFooter.style.display = 'none';
 					};
 
 				}, 16));
@@ -270,6 +294,7 @@ var lengthLinks = anchorLinks.length;
 					};
 					heroLink.classList.add('pagination__link--active');
 					heroLink.style.pointerEvents = 'none';
+					appeareFooter.style.display = 'none';
 				});
 
 				bestLink.addEventListener("click", function (event) {
@@ -283,6 +308,7 @@ var lengthLinks = anchorLinks.length;
 					};
 					bestLink.classList.add('pagination__link--active');
 					bestLink.style.pointerEvents = 'none';
+					appeareFooter.style.display = 'none';
 				});
 
 				sliderLink.addEventListener("click", function (event) {
@@ -296,6 +322,7 @@ var lengthLinks = anchorLinks.length;
 					};
 					sliderLink.classList.add('pagination__link--active');
 					sliderLink.style.pointerEvents = 'none';
+					appeareFooter.style.display = 'none';
 				});
 
 				teamLink.addEventListener("click", function (event) {
@@ -309,6 +336,7 @@ var lengthLinks = anchorLinks.length;
 					};
 					teamLink.classList.add('pagination__link--active');
 					teamLink.style.pointerEvents = 'none';
+					appeareFooter.style.display = 'none';
 				});
 
 				selectionLink.addEventListener("click", function (event) {
@@ -322,6 +350,7 @@ var lengthLinks = anchorLinks.length;
 					};
 					selectionLink.classList.add('pagination__link--active');
 					selectionLink.style.pointerEvents = 'none';
+					appeareFooter.style.display = 'none';
 				});
 
 				reviewsLink.addEventListener("click", function (event) {
@@ -335,6 +364,7 @@ var lengthLinks = anchorLinks.length;
 					};
 					reviewsLink.classList.add('pagination__link--active');
 					reviewsLink.style.pointerEvents = 'none';
+					appeareFooter.style.display = 'none';
 				});
 
 				orderLink.addEventListener("click", function (event) {
@@ -348,6 +378,7 @@ var lengthLinks = anchorLinks.length;
 					};
 					orderLink.classList.add('pagination__link--active');
 					orderLink.style.pointerEvents = 'none';
+					appeareFooter.style.display = 'none';
 				});
 
 				yamapLink.addEventListener("click", function (event) {
@@ -361,6 +392,11 @@ var lengthLinks = anchorLinks.length;
 					};
 					yamapLink.classList.add('pagination__link--active');
 					yamapLink.style.pointerEvents = 'none';
+					if (targetIndex == 7) {
+						appeareFooter.style.display = 'block';
+					}else {
+						appeareFooter.style.display = 'none';
+					};
 				});
 
 				///// MAIN MENU NAV/////
@@ -447,6 +483,11 @@ var lengthLinks = anchorLinks.length;
 					yamapLink.style.pointerEvents = 'none';
 					openMenu.classList.remove('header__menu--active');
 					trigger.classList.remove('hamburger-menu-link__bars--active')
+					if (targetIndex == 7) {
+						appeareFooter.style.display = 'block';
+					}else {
+						appeareFooter.style.display = 'none';
+					};
 				});
 				recieveMenuLink.addEventListener("click", function (event) {
 					event.preventDefault();
